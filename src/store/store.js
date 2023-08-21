@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cart from "./cart";
+import togglecart from "./cart";
+import cartfunction from "./cartfunction";
 
 const store = configureStore({
   reducer: {
-    cart: cart,
+    togglecart: togglecart,
+    cartFunctions: cartfunction,
   },
 });
 

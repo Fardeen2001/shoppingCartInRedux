@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialCart = {
   isCartOpen: false,
 };
-const cartSlice = createSlice({
-  name: "cart",
+const toggleartSlice = createSlice({
+  name: "Togglecart",
   initialState: initialCart,
   reducers: {
     openCart: (state) => {
@@ -12,5 +12,5 @@ const cartSlice = createSlice({
   },
 });
 
-export const cartAction = cartSlice.actions;
-export default cartSlice.reducer;
+export const togglecartAction = toggleartSlice.actions;
+export default toggleartSlice.reducer;
